@@ -25,6 +25,7 @@ function addFloatAdv(both, position, href, imageSrc) {
     div.appendChild(a)
     document.body.appendChild(div)
 }
+
 function addTopOrBottomAdv(position, href, imageSrc) {
     const div = document.createElement("div");
     div.className = position + "-advertising advertising";
@@ -57,9 +58,10 @@ function loadStyle() {
     new_element.setAttribute('rel', 'stylesheet');
     new_element.setAttribute("type", "text/css");
     // new_element.setAttribute('href', 'main-load.css');
-    new_element.setAttribute('href', 'https://analysis.zhantaotie.com/main-load.css');
+    new_element.setAttribute('href', 'https://cdn.jsdelivr.net/gh/Pretend-Jhaol/advertising@release/main-load.css');
     document.head.appendChild(new_element);
 }
+
 //
 loadStyle()
 // addDelayMask("www.baidu.com", 5000)
