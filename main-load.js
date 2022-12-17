@@ -61,7 +61,7 @@ function loadStyle() {
     document.head.appendChild(new_element);
 }
 //
-// loadStyle()
+loadStyle()
 // addDelayMask("www.baidu.com", 5000)
 // addFloatAdv("right", "bottom", "https://g32554517s.zicp.fun/adv/jump?id=", 'https://fakeimg.pl/220x300/F44336/FFF/?font=noto&text=顶部广告')
 // addFloatAdv("left", "bottom", "https://g32554517s.zicp.fun/adv/jump?id=", 'https://fakeimg.pl/220x300/F44336/FFF/?font=noto&text=顶部广告')
