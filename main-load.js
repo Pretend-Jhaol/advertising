@@ -58,7 +58,7 @@ function loadStyle() {
     new_element.setAttribute('rel', 'stylesheet');
     new_element.setAttribute("type", "text/css");
     // new_element.setAttribute('href', 'main-load.css');
-    new_element.setAttribute('href', 'https://cdn.jsdelivr.net/gh/Pretend-Jhaol/advertising@release/main-load.css');
+    new_element.setAttribute('href', 'https://cdn.jsdelivr.net/gh/Pretend-Jhaol/advertising@latest/main-load.css');
     document.head.appendChild(new_element);
 }
 
