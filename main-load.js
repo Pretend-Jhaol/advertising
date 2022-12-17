@@ -25,7 +25,6 @@ function addFloatAdv(both, position, href, imageSrc) {
     div.appendChild(a)
     document.body.appendChild(div)
 }
-
 function addTopOrBottomAdv(position, href, imageSrc) {
     const div = document.createElement("div");
     div.className = position + "-advertising advertising";
