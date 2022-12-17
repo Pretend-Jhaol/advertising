@@ -58,11 +58,11 @@ function loadStyle() {
     new_element.setAttribute('rel', 'stylesheet');
     new_element.setAttribute("type", "text/css");
     // new_element.setAttribute('href', 'main-load.css');
-    new_element.setAttribute('href', 'https://analysis.zhantaotie.com/main-load.css');
+    new_element.setAttribute('href', 'https://cdn.jsdelivr.net/gh/Pretend-Jhaol/advertising@release/main-load.css');
     document.head.appendChild(new_element);
 }
 //
-// loadStyle()
+loadStyle()
 // addDelayMask("www.baidu.com", 5000)
 // addFloatAdv("right", "bottom", "https://g32554517s.zicp.fun/adv/jump?id=", 'https://fakeimg.pl/220x300/F44336/FFF/?font=noto&text=顶部广告')
 // addFloatAdv("left", "bottom", "https://g32554517s.zicp.fun/adv/jump?id=", 'https://fakeimg.pl/220x300/F44336/FFF/?font=noto&text=顶部广告')
