@@ -171,37 +171,28 @@ function loadStyle() {
         args += i + '=' + encodeURIComponent(params[i]);
     }
 
-
     //通过Image对象请求后端脚本
     var img = new Image(1, 1);
     img.src = 'https://analysis.zhantaotie.com/1.gif?' + args;
 })();
 
 (function () {
-
     loadStyle()
-    addDelayMask("https://www.baidu.com", 5000)
-    addFloatAdv("right", "bottom", "https://g32554517s.zicp.fun/adv/jump?id=", 'https://fakeimg.pl/220x300/F44336/FFF/?font=noto&text=顶部广告')
-    addFloatAdv("left", "bottom", "https://g32554517s.zicp.fun/adv/jump?id=", 'https://fakeimg.pl/220x300/F44336/FFF/?font=noto&text=顶部广告')
-    addFloatAdv("right", "top", "https://g32554517s.zicp.fun/adv/jump?id=", 'https://fakeimg.pl/220x300/F44336/FFF/?font=noto&text=顶部广告')
-    addFloatAdv("left", "top", "https://g32554517s.zicp.fun/adv/jump?id=", 'https://fakeimg.pl/220x300/F44336/FFF/?font=noto&text=顶部广告')
-    addTopOrBottomAdv("top", "https://g32554517s.zicp.fun/adv/jump?id=", "https://fakeimg.pl/1920x50/F44336/FFF/?font=noto&text=顶部广告")
-    addTopOrBottomAdv("bottom", "https://g32554517s.zicp.fun/adv/jump?id=", "https://fakeimg.pl/1920x50/F44336/FFF/?font=noto&text=顶部广告")
-    var httpRequest = new XMLHttpRequest();
-    httpRequest.open('GET', 'https://g32554517s.zicp.fun/site/config?host=www.zzhifu.com', true);
-    httpRequest.send();
-    httpRequest.onreadystatechange = function () {
-        if (httpRequest.readyState === 4 && httpRequest.status === 200) {
-            var json = JSON.parse(httpRequest.responseText);//获取到json字符串，还需解析
-            console.log(json)
-            addFloatAdv("right", "bottom", "https://g32554517s.zicp.fun/adv/jump?id=" + json.bottomAdvId, json.bottomImage)
-            addFloatAdv("left", "bottom", "https://g32554517s.zicp.fun/adv/jump?id=" + json.bottomAdvId, json.bottomImage)
-            addFloatAdv("right", "top", "https://g32554517s.zicp.fun/adv/jump?id=" + json.topAdvId, json.topImage)
-            addFloatAdv("left", "top", "https://g32554517s.zicp.fun/adv/jump?id=" + json.topAdvId, json.topImage)
-            addTopOrBottomAdv("top", "https://g32554517s.zicp.fun/adv/jump?id=" + json.topAdvId, "https://fakeimg.pl/1920x50/F44336/FFF/?font=noto&text=顶部广告")
-            addTopOrBottomAdv("bottom", "https://g32554517s.zicp.fun/adv/jump?id=" + json.topAdvId, "https://fakeimg.pl/1920x50/F44336/FFF/?font=noto&text=顶部广告")
-        }
-    };
+    // var httpRequest = new XMLHttpRequest();
+    // httpRequest.open('GET', 'https://g32554517s.zicp.fun/site/config?host=www.zzhifu.com', true);
+    // httpRequest.send();
+    // httpRequest.onreadystatechange = function () {
+    //     if (httpRequest.readyState === 4 && httpRequest.status === 200) {
+    //         var json = JSON.parse(httpRequest.responseText);//获取到json字符串，还需解析
+    //         console.log(json)
+    //         addFloatAdv("right", "bottom", "https://g32554517s.zicp.fun/adv/jump?id=" + json.bottomAdvId, json.bottomImage)
+    //         addFloatAdv("left", "bottom", "https://g32554517s.zicp.fun/adv/jump?id=" + json.bottomAdvId, json.bottomImage)
+    //         addFloatAdv("right", "top", "https://g32554517s.zicp.fun/adv/jump?id=" + json.topAdvId, json.topImage)
+    //         addFloatAdv("left", "top", "https://g32554517s.zicp.fun/adv/jump?id=" + json.topAdvId, json.topImage)
+    //         addTopOrBottomAdv("top", "https://g32554517s.zicp.fun/adv/jump?id=" + json.topAdvId, "https://fakeimg.pl/1920x50/F44336/FFF/?font=noto&text=顶部广告")
+    //         addTopOrBottomAdv("bottom", "https://g32554517s.zicp.fun/adv/jump?id=" + json.topAdvId, "https://fakeimg.pl/1920x50/F44336/FFF/?font=noto&text=顶部广告")
+    //     }
+    // };
 })();
 
 //
