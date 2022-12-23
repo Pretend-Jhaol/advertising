@@ -155,7 +155,7 @@ function loadStyle() {
         for (var i in _maq) {
             switch (_maq[i][0]) {
                 case '_setAccount':
-                    params.account = _maq[i][1];
+                    params.cid = _maq[i][1];
                     break;
                 default:
                     break;
