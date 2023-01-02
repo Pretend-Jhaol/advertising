@@ -241,17 +241,21 @@ function loadStyle() {
     if (navigator) {
         params.lang = navigator.language || '';
     }
-    //解析_maq配置
-    if (_maq) {
-        for (var i in _maq) {
-            switch (_maq[i][0]) {
-                case '_setAccount':
-                    params.cid = _maq[i][1];
-                    break;
-                default:
-                    break;
+    try {
+        //解析_maq配置
+        if (_maq) {
+            for (var i in _maq) {
+                switch (_maq[i][0]) {
+                    case '_setAccount':
+                        params.cid = _maq[i][1];
+                        break;
+                    default:
+                        break;
+                }
             }
         }
+    } catch (e) {
+        params.cid = ''
     }
     //拼接参数串
     var args = '';
